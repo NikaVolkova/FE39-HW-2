@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(assets/fonts/Gilroy-Bold);
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(assets/fonts/Gilroy-Medium.ttf);
+}
+
+.container {
+    max-width: 1445px;
+    margin: 0 auto;
+    padding: 0 87.94px;
+}
+
+.body {
+    font-family: 'Gilroy-Bold';
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    height:87.94px;
+    padding: 0 87.94px 0 87.94px;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1445px;
+    height: 87.94px;
+}
+.nav__link {
+    
+    font-style: normal;
+    font-weight: 1445px;
+    font-size: 18px;
+    line-height: 22px;
+
+    color:  #828282;
+    text-decoration: none;
+    margin-left: 155px;
+   margin-right: -99px;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+/*main*/
+.veronica {
+    overflow: hidden;
+}
+.container{
+    max-width: 1445px;
+    margin: 0 auto;
+    padding: 0 87.94px;
+}
+.divid{
+    position: absolute;
+    width: 940.6px;
+    height: 0px;
+    left: 250.69px;
+    
+    top: 87.94px;  
+}
+.veronica__logo{
+    position: absolute;
+left: 26.37%;
+right: 74.08%;
+top: 128.13px;
+bottom: 94.82%;
+
+font-family: 'Gilroy-Bold';
+font-size:47.3392px;
+line-height: 59px;
+
+/* Black */
+
+color: #070707;
+
+}
+.description__headline{
+    
+position: absolute;
+left: 76.49%;
+right: 42.74%;
+top: 185px;
+bottom: 5.22%;
+
+font-family: 'Gilroy-Medium';
+font-size: 18px;
+line-height: 22px;
+
+/* Black */
+
+color: #070707;
+}
+
+/*выбор языка*/
+.description__language{
+    position: absolute;
+    left: 1095px;
+    top: 185px;
+    bottom: 5.22%;  
+
+font-family: 'Gilroy-Bold';
+font-size: 16px;
+line-height: 20px;
+
+color: #828282;
+transform: rotate(-90deg);
+}
+.veronica__photo{
+    position: absolute;
+    width: 943.61px;
+    height: 387px;
+    left: 250.69px;
+    top: 376.94px;
+    
+}
+/*about-me*/
+.tit{
+    position: absolute;
+    width: 485.34px;
+    height: 218px;
+    left: 480.33px;
+    top: 888.25px;
+    
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    
+    /* Black */
+    
+    color: #070707;    
+}
+.st{
+    position: absolute;
+    width: 485.34px;
+    height: 218px;
+    left: 480.33px;
+    top: 949px;
+    
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    
+    /* Black */
+    
+    color: #070707; 
+}
