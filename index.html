@@ -10,37 +10,52 @@
 <body>
     <!-- Начало шапки-->
     <header class="header">
+        <div class="wrapper">
         <p id="top"></p>
-        <div class="header-wrapper"> 
+        <div class="header__wrapper"> 
         <!-- Начало меню--> 
         <nav class="header__nav">
-            <a class="nav__link" href="#top">Home</a>
-            <a class="nav__link" href="#Aboutme">About me</a>
-            <a class="nav__link" href="#Skills">Skills</a>
-            <a class="nav__link" href="#Portfolio">Portfolio</a>
-            <a class="nav__link" href="#Contacts">Contacts</a>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#top" class="header__link">Home</a>
+                </li>
+                <li class="header__item">
+                    <a href="#Aboutme" class="header__link">About me</a>
+                </li>
+                <li class="header__item">
+                    <a href="#Skills" class="header__link">Skills</a>
+                </li>
+                <li class="header__item">
+                    <a href="#Portfolio" class="header__link">Portfolio</a>
+                </li>
+                <li class="header__item">
+                    <a href="#Contacts" class="header__link">Contacts</a>
+                </li>
+        </ul>
+        <div class="divid"> <img src="../FE39-HW-2/Vector.png" alt="line"/> </div>
         </nav>
     </div> 
+    
+</div>
     </header>
     
-        <main>
-            <div class="divid"> <img src="../FE39-HW-2/Vector.png" alt=""/> </div>
-            <section class="veronica">
-                <div class="container">
+        <main class="main">
+                    <div class="wrapper">
+                        <div class="veronica">
                       <h1 class="veronica__logo" href="#">
                           Veronica <br> Volkova </h1>
                         <div class="veronica__description">
-                            <a class="description__headline"> frontend developer <br> 30 years old Minsk</a>
-                            <select class="description__language">
+                            <a class="veronica__headline"> frontend developer <br> 30 years old Minsk</a>
+                            <select class="veronica__language">
                                 <option>EN/RU<option>
                                 <option value="/en/"><strong>EN</strong><option>
                                 <option value="/ru/"><strong>RU</strong><option>
                               </select>
-                       
+                           </div>
                         </div>
-                        <div class="veronica__photo"> <img src="../FE39-HW-2/photo.png" alt=""/></div>
+                        <div class="wrapper__photo"> <img src="../FE39-HW-2/photo.png" alt="photo"/></div>
                     </div>
-                    <section class="about-me">
+                    <div class="about-me">
                         
                                 <h2 id="Aboutme"> About me</h2>
                                 <p class="st"> Hi, I'm Veronica – frontend developer from Minsk. 
@@ -49,18 +64,17 @@
                                     TeachMeSkills<br>Ready to implement excellent projects
                                     with wonderful people.
                                 </p>
-           
-            </section>
-
+                    </div>
            <!-- Skills--> 
-    <section class="skills">       
-    <div class="flex">
+         
+    <section class="skills">
         <h1 id="Skills">
             Skills
          </h1>
-         <p class="skills_tit">
+         <p class="Skills_tit">
          I work in such programs as
          </p>
+        <div class="flex">
         <div class="flex-box">
             <p class="rtext"><img src="../FE39-HW-2/Photoshop.svg" alt=""/> </p>
             <p class="rtext"><a href="#"> Adobe Photoshop</a></p>
@@ -90,46 +104,40 @@
             </div>
         </div>
         </div>
-           </section>
+    </section>
+           
 
           <!-- Portfolio-->    
-          <section class="portfolio">
+         
             <div class="portfolio_flex">
             <h1 id="Portfolio">
                 Portfolio
              </h1>
-            
-             <div class="portfolio_flex-box">
-                <p><img src="../FE39-HW-2/sloy.png" alt=""/> </p>
-             </div>
+            <p><img src="../FE39-HW-2/sloy.png" alt="sloy"/> 
+            </p>
+            <h2 id="portfolio_etext">
+                Online fashion store - Homepage
+             </h2>
             </div>
-         </section>
-         <h2 id="portfolio_etext">
-            Online fashion store - Homepage
-         </h2>
- 
+
          <!-- Reebok-->  
-         <section class="reebok">
-            <div class="reebok_flex">
-             <div class="reebok_flex-box">
-                <p><img src="../FE39-HW-2/reebok.png" alt=""/> </p>
-                </div> 
-            </div>
-         </section>
-         <h2 id="reebok_text">Reebok Store - Concept</h2>
-
-         <!-- Braun-->  
-         <section class="braun">
-            <div class="braun_flex">
-             <div class="braun_flex-box">
-                <p><img src="../FE39-HW-2/braun.png" alt=""/> </p> 
-            </div>
-            </div>
-         </section>
-         <h2 id="braun_text">Braun Landing Page - Concept</h2>
-
-        <!--Contacts--> 
         
+            <div class="reebok_flex">
+             
+                <p><img src="../FE39-HW-2/reebok.png" alt="reebok"/> </p>
+            
+                <h2 id="reebok_text">Reebok Store - Concept</h2>
+            </div>
+        
+         <!-- Braun-->  
+         
+            <div class="braun_flex">
+                <p><img src="../FE39-HW-2/braun.png" alt="braun"/> </p> 
+                <h2 id="braun_text">Braun Landing Page - Concept</h2>
+            </div>
+        
+        <!--Contacts--> 
+        <div class="Contacts">
             <h1 id="Contacts">
                 Contacts
              </h1>
@@ -139,9 +147,10 @@
              </p>
             <div class="post">
                 <form method="post" action="../FE39-HW-2/mail.php" name="f2" enctype="text/plain">
-                    <button type="image" src="../FE39-HW-2/chip bg.png" title="Send message" class="st1"> Send message</button>   
+                    <button type="submit" class="st_submit"> Send message</button>   
                 </form>
             </div>
+        </div>
                 <!-- Icons -->
                 <div class="icons">
                 <div class="social__block">

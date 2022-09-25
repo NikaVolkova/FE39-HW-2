@@ -17,74 +17,77 @@
     padding: 0 87.94px;
  
 }
+html{
+   box-sizing: border-box;
+}
+*,*::before,*::after{
+   box-sizing: inherit;
+}
 
 .body {
     font-family: 'Gilroy-Bold';
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    background-color: white;
-    height:87.94px;
-    padding: 0 87.94px 0 87.94px;
-}
-.nav__link {
-    
    font-style: normal;
-   font-weight: 1445px;
+   font-weight: normal;
+   max-width: 1445px;
+   height: 4759px;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.wrapper{
+   max-width:943.61px;
+   margin: 0 auto;
+   
+}
+.header__wrapper {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-around;
+   padding-top: 32.99px;
+   padding-left: 250.69px;
+}
+.header__list{
+   display: flex;
+   flex-wrap: nowrap;
+   padding-bottom: 32px;
+}
+ul{list-style: none;}
+
+.header__item{
+   margin-right: 155.65px;
+   text-decoration: none;
+}
+.header__item:last-child{
+   margin-right: 0;
+}
+.header__link{
    font-size: 18px;
    line-height: 22px;
-
-   color:  #828282;
+   color: #828282;
    text-decoration: none;
-   margin-left: 155px;
-   margin-right: -99px;
 }
-
-.header-wrapper {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   height: 87.94px;
+.header__link::hover,.header__link::focus,.header__link::active{
+   opacity: 0.75;
 }
-.nav__link {
-   
-  font-style: normal;
-  font-weight: 1445px;
-  font-size: 18px;
-  line-height: 22px;
-
-  color:  #828282;
-  text-decoration: none;
-  margin-left: 155px;
-  margin-right: -99px;
-}
-
-.nav__link:last-child {
-   margin-right: 0;
+.divid{
+   width: 940.6px;
+  padding-top: 5.87px;  
 }
 
 
 /*main*/
 .veronica {
-    overflow: hidden;
+   
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
-.container{
-    max-width: 1445px;
-    margin: 0 auto;
-    padding: 0 87.94px;
-}
-.divid{
-    position: absolute;
-    width: 940.6px;
-    height: 0px;
-    left: 250.69px;
-    
-    top: 87.94px;  
-}
+
+
 .veronica__logo{
-    position: absolute;
+padding-left: 140px;
 left: 26.37%;
 right: 74.08%;
 top: 128.13px;
@@ -94,35 +97,26 @@ font-family: 'Gilroy-Bold';
 font-size:47.3392px;
 line-height: 59px;
 
-/* Black */
-
 color: #070707;
 
 }
-.description__headline{
-    
-position: absolute;
-left: 76.49%;
+.veronica__headline{
+left: 46.49%;
 right: 42.74%;
 top: 185px;
-bottom: 5.22%;
+margin-bottom: 49.67px;
 
 font-family: 'Gilroy-Medium';
 font-size: 18px;
 line-height: 22px;
-
-/* Black */
-
 color: #070707;
 }
 
 /*выбор языка*/
-.description__language{
-    position: absolute;
-    left: 1095px;
-    top: 185px;
-    
-
+.veronica__language{
+margin-right: -130px;
+margin-left: 150px;
+top: 185px;
 font-family: 'Gilroy-Bold';
 font-size: 16px;
 line-height: 20px;
@@ -130,8 +124,8 @@ line-height: 20px;
 color: #828282;
 transform: rotate(-90deg);
 }
-.veronica__photo{
-    position: absolute;
+.wrapper__photo{
+   padding-left: 140px;
     width: 943.61px;
     height: 387px;
     left: 250.69px;
@@ -139,60 +133,66 @@ transform: rotate(-90deg);
     
 }
 /*about-me*/
+.about-me{
+   padding-left: 140px;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content:center;
+   flex-direction: column;
+}
 #Aboutme{
-    position: absolute;
-    width: 485.34px;
-    height: 218px;
-    left: 480.33px;
-    top: 888.25px;
-    
+   padding-left: 140px; 
+   left: 44.68%;
+   right: 44.54%;
+   top: 18.66%;
+   bottom: 80.43%;
     font-family: 'Gilroy-Bold';
     font-size: 34px;
     line-height: 42px;
     text-align: center;
-    
-    /* Black */
-    
     color: #070707;    
 }
 .st{
-    position: absolute;
+   padding-left: 140px;
     width: 485.34px;
     height: 218px;
     left: 480.33px;
     top: 949px;
-    
     font-family: 'Gilroy-Medium';
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    
-    /* Black */
-    
     color: #070707; 
 }
 
  /* Skills */
- .skills {
-    top:1049px; 
-    width: 1445px;
-    height: 492.96px;
-    
-}
+ .skills{
+   padding-left: 140px;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content:center;
+   flex-direction: column;
+ }
 
  #Skills{
+   padding-left: 140px;
+   left: 45.8%;
+   right: 45.59%;
    top: 1365px;
-    position: absolute;
+   bottom: 70.77%;
+    
     text-align: center;
     font-family: 'Gilroy-Bold';
     font-size: 34px;
-    line-height: 42px;
-    
-   
+    line-height: 42px;   
  }
 
- .skills_tit{
-    position: absolute;
+ .Skills_tit{
+   padding-left: 140px;
+   left: 42.18%;
+   right: 42.04%;
     text-align: center;
     font-family: 'Gilroy-Medium';
     font-size: 18px;
@@ -200,13 +200,14 @@ transform: rotate(-90deg);
     top: 1460.14px;
  }
  .flex{
-   margin-top: 1470px;
+   padding-left: 140px;
+   top:1566.65px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    width: 100%;
-    height: 506px;
+    width: 880px;
+    height: 450px;
    
  }
  .flex-box{
@@ -268,74 +269,53 @@ transform: rotate(-90deg);
 
   /* Stars end*/
   /* Portfolio*/
-  .portfolio {
-   
-    width: 100%;
-    height: 510px;
-    top:1996.93px;
-}
+  .portfolio_flex{
+   padding-left: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
 
 #Portfolio{
-    position: absolute;
+   left: 45.62%;
+   right: 45.21%;
+   top: 41.96%;
+   bottom: 57.13%;
     text-align: center;
     font-family: 'Gilroy-Bold';
     font-size: 34px;
     line-height: 42px;
-    top: 1996.93px;
-   
- }
- 
-
- .portfolio_flex{
- 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1445px;
-    height: 510px;
-   
- }
- .portfolio_flex-box{
-   position: absolute; 
-    width: 100%;
-    height: 510px;
+    color: #070707;  
  }
 
  h2#portfolio_etext{
-   width: 1445px;
+   
    text-align: center;
    font-family: 'Gilroy-Medium';
    font-size:18px;
    line-height: 22px;
-   top:2641.88px;
+   left: 40.79%;
+   right: 40.1%;
+   top: 55.51%;
+   bottom: 44.02%;
    text-decoration-line: underline;
    color: #070707;}
 
 /* Portfolio end*/
 /* Reebok*/
-.reebok{
 
-    width: 1445px;
-    height: 665.97px;
-    top: 2763px;
-}
 
  .reebok_flex{
     top:2763px;
+    padding-left: 250px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 1445px;
-    height: 522px;
-   
+    flex-direction: column;  
  }
- .reebok_flex-box{
-   position: absolute; 
-    width: 100%;
-    height: 522px;
- }
+
  h2#reebok_text{
-   width: 1445px;
+   left: 43.36%;
+   right: 42.6%;
     text-align: center;
     font-family: 'Gilroy-Medium';
     font-size:18px;
@@ -346,32 +326,21 @@ transform: rotate(-90deg);
  }
  /* reebok end*/
  /* Braun*/
- .braun {
-    top:3451px;
-    width: 1445px;
-    height: 522px;
-    
-}
 
   .braun_flex{
     top:3451px;
+    padding-left: 250px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 1445px;
-    height: 522px;
+    flex-direction: column;
+    height: 686px;
     
- }
- .braun_flex-box{
-   position: absolute; 
-    width: 100%;
-    height: 522px;
  }
 
  h2#braun_text{
-   width: 1445px;
-    position: absolute;
-    text-align: center;
+   left: 41.42%;
+   right: 40.65%;
+   text-align: center;
     font-family: 'Gilroy-Medium';
     font-size:18px;
     line-height: 22px;
@@ -382,22 +351,28 @@ transform: rotate(-90deg);
 
   /* Braun end*/
    /* Contacts*/
+   .Contacts{
+      top:4251.24px;
+      padding-left: 140px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;   
+   } 
   
-  
-  #Contacts{
-   position: absolute;
-   width: 1445px;
-top:4251.24px;   
+#Contacts{
+padding-left: 140px;
+left: 44.89%;
+right: 45.03%;
+top:4251.24px;
+bottom: 9.76%;
 font-family: 'Gilroy-Bold';
 font-size: 34px;
 line-height: 42px;
 text-align: center;
 color: #070707;
-
   }
   .contacts_tit{
-   position: absolute;
-   width: 1445px;
+padding-left: 140px;
 top:4314.34px;
 font-family: 'Gilroy-Medium';
 font-size: 18px;
@@ -407,32 +382,34 @@ color: #070707;
   }
 .post{
    text-align: center;
-   position: absolute;
-   width: 1445px;
+   padding-left: 140px;
 	top:4401px;  
 }
   button [type="text"]{
    align-items: center;
-   position: absolute;
-   width: 1445px;
+   padding: 3px 20.06px;
 	top:4401px;
-	border:1px solid #f4f4f4;
-	height: 22px;
-	color: rgb(236, 232, 232);
-	font-size: 18px;
-	outline: none;
-  background-color: #000;
+	border:0;
+	text-transform: uppercase;
+	
+	height: 38px;
+   width: 166.46px;
+	
+  background-color:black;
 }
 
-textarea{
-   width: 1445px;
-	border:1px solid #f4f4f4;
+.st_submit{
+
+	border:1px solid #f1efef;
    font-family: 'Gilroy-Bold';
    font-size: 18px;
    line-height: 22px;  
    text-align: center; 
-   color: #FFFFFF;}
-   
+   color: #FFFFFF;
+   background-color:black;}
+   .st_submit::hover,.st_submit::focus,.st_submit::active{
+      background: #7b519d;
+   }  
    
    /* Icon */
 
@@ -449,10 +426,10 @@ textarea{
 
 /* Button */
 .icons{
-   top:4525.68px;
-   position: absolute;
-   width: 1445px;
-   text-align: center; 
+   top:4531.99px;
+   padding-left: 250px;
+   display: block;
+   
 }
 .social__block {
    
@@ -487,9 +464,9 @@ textarea{
 
 /* Footer */
 .contacts_text{
-   position: absolute;
+   
    top:4601.76px;
-   width: 1445px;
+   padding-left: 250px;
    
    font-family: 'Gilroy-Medium';
    font-size: 14px;
