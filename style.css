@@ -10,6 +10,7 @@
     font-family: 'Gilroy-Medium';
     src: url(../FE39-HW-2/Gilroy-Medium.ttf);
 }
+@media (min-width: 1445px)
 
 .container {
     max-width: 1445px;
@@ -83,6 +84,7 @@ ul{list-style: none;}
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 
@@ -101,6 +103,7 @@ color: #070707;
 
 }
 .veronica__headline{
+
 left: 46.49%;
 right: 42.74%;
 top: 185px;
@@ -114,23 +117,23 @@ color: #070707;
 
 /*выбор языка*/
 .veronica__language{
-margin-right: -130px;
-margin-left: 150px;
+   left: 5.9%;
+
 top: 185px;
 font-family: 'Gilroy-Bold';
 font-size: 16px;
 line-height: 20px;
-
 color: #828282;
 transform: rotate(-90deg);
 }
 .wrapper__photo{
+   margin-left: 140px;
+   width: 943.61px;
+   height: 387px;
    padding-left: 140px;
-    width: 943.61px;
-    height: 387px;
-    left: 250.69px;
-    top: 376.94px;
-    
+   left: 250.69px;
+   top: 276.94px;
+   background: url(photo.png);
 }
 /*about-me*/
 .about-me{
@@ -154,6 +157,7 @@ transform: rotate(-90deg);
     color: #070707;    
 }
 .st{
+   
    padding-left: 140px;
     width: 485.34px;
     height: 218px;
@@ -287,7 +291,9 @@ transform: rotate(-90deg);
     line-height: 42px;
     color: #070707;  
  }
-
+.sloy{
+   background: url(sloy.png);
+}
  h2#portfolio_etext{
    
    text-align: center;
@@ -312,7 +318,9 @@ transform: rotate(-90deg);
     align-items: center;
     flex-direction: column;  
  }
-
+.reebok{
+   background: url(reebok.png);
+}
  h2#reebok_text{
    left: 43.36%;
    right: 42.6%;
@@ -336,7 +344,14 @@ transform: rotate(-90deg);
     height: 686px;
     
  }
+.braun{
+width: 936.24px;
+height: 522px;
+left: 252.7px;
+top: 3451px;
 
+background: url(braun.png);
+}
  h2#braun_text{
    left: 41.42%;
    right: 40.65%;
@@ -356,11 +371,11 @@ transform: rotate(-90deg);
       padding-left: 140px;
       display: flex;
       align-items: center;
-      flex-direction: column;   
+      flex-direction: column;    
    } 
   
 #Contacts{
-padding-left: 140px;
+   padding-left: 140px;
 left: 44.89%;
 right: 45.03%;
 top:4251.24px;
@@ -381,25 +396,26 @@ text-align: center;
 color: #070707;
   }
 .post{
+   
    text-align: center;
    padding-left: 140px;
 	top:4401px;  
 }
   button [type="text"]{
+   padding-left: 140px;
    align-items: center;
    padding: 3px 20.06px;
 	top:4401px;
 	border:0;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 	height: 38px;
-   width: 166.46px;
-	
+   width: 166.46px;	
   background-color:black;
+  border-radius: 50px;
 }
 
 .st_submit{
-
+   
 	border:1px solid #f1efef;
    font-family: 'Gilroy-Bold';
    font-size: 18px;
@@ -475,3 +491,302 @@ color: #070707;
    
    color: #828282; 
 }
+@media (min-width: 991px) and (max-width:1199px) {
+
+.main {
+flex: 0 0 66.666667%;
+max-width: 66.666667%;
+order: 2;
+}
+}
+.veronica__headline{
+   padding-top: 15px;
+   display: block;
+   padding-left: 250px;
+}
+.veronica__language{
+   margin-left: 650px; 
+}
+@media (max-width: 1200px) {
+
+.main {
+flex: 0 0 75%;
+max-width: 75%;
+}
+.header__nav{
+   padding-right: 140px;
+}
+
+.sloy{
+   padding-top: 64.94px;
+   width: 937px;
+   height: 510px;
+   left: 29px;
+   top: 2937px;
+   background: url(sloy.png);
+}
+h2#portfolio_etext{
+   padding-top: 77.97px;
+}
+
+     .reebok{
+      padding-top: 77.97px;
+      width: 937px;
+      height: 510px;
+      left: 29px;
+      top: 3241px;
+      background: url(reebok.png);    
+     }
+     h2#reebok_text{
+      padding-top: 77/97px;
+      left: 22.93%;
+      right: 22.98%;
+      top: 77.84%;
+      bottom: 21.67%;
+   } 
+}
+@media (max-width: 767px){
+
+.nav-toggle {
+   display: block;
+}
+header {
+   padding: 26px 0;
+}
+.body {
+
+  max-width: 767px;
+  height: 4435px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.wrapper{
+   max-width:375px;
+   margin: 0 auto;
+padding-left: 29px;
+   
+}
+.header__burger {
+   display: block;
+  }
+ 
+.header__nav{
+   position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: #FFEFBA;
+	z-index: 10;
+   padding: 75px;
+   transform: translateX(100%);
+}
+.header__item{
+   width: 100%;
+   margin-right: 0;
+   margin-bottom: 30px;
+}
+.header__item:last-child{
+   margin-bottom: 0;
+}
+
+.header__link{
+   font-size: 42px;
+   line-height: 48px;
+}
+.header__nav-close{
+   width: 40px;
+   height: 40px;
+   position: absolute;
+   top:20px;
+   right: 20px;
+   z-index: 11;
+}
+.header__nav-close-line{
+   display:block;
+   width: 100%;
+   height: 2px;
+   background-color: #fff;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%);
+}
+.header__nav-close-line:first-child{
+   transform: translateY(-50%) rotate(45deg);
+}
+.header__nav-close-line:last-child{
+   transform: translateY(-50%) rotate(-45deg);
+}
+ .veronica {  
+    display: flex;
+    flex-direction: column;
+
+}
+
+.veronica__logo{
+left: 6.93%;
+right: 60%;
+top: 1.47%;
+bottom: 96.14%;
+ }
+
+.veronica__headline{
+display: flex;
+flex-direction: column;
+padding-left: 140px;
+ padding-top: 23px;
+ margin-bottom: 36.94px;  
+ left: 7.47%;
+ right: 51.03%;
+ top: 4.37%;
+ bottom: 94.63%;
+
+}
+.veronica__language{
+   left: 95.9%;
+   position: fixed;
+top: 185px;
+font-family: 'Gilroy-Bold';
+font-size: 16px;
+line-height: 20px;
+color: #828282;
+transform: rotate(-90deg);
+}
+
+.wrapper__photo{
+
+text-align: center;
+height: 478px;
+padding-top: 36.94px;
+background: url(photo_n.webp) no-repeat;
+}
+.skills{
+
+   flex-direction: column;  
+}
+#Skills{
+
+padding-top: 59px;
+
+top: 31.79%;
+bottom: 67.62%;  
+color: #000000; 
+ }
+
+ .Skills_tit{
+
+   left: 19.73%;
+   right: 19.48%;
+   top: 33.51%;
+   bottom: 65.95%;
+  
+   color: #000000;
+ }
+ .flex{
+
+height: auto;
+
+top: 35.65%;
+bottom: 62.36%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+
+ }
+ .flex-box:nth-child(1){
+padding-top: 70.96px;
+left: 38%;
+right: 38.24%;
+}
+.flex-box:nth-child(2){
+padding-top: 199.59px;
+left: 38%;
+right: 38.24%;
+   }
+.flex-box:nth-child(3){
+padding-top: 202.21px;
+left: 38%;
+right: 38.24%;
+   }
+.flex-box:nth-child(4){
+padding-top: 199.43px;
+left: 38%;
+right: 38.24%;
+   }
+   #Portfolio{
+      padding-top: 179.73px;
+      left: 32.27%;
+      right: 32.39%;
+      top: 63.79%;
+      bottom: 35.24%;
+      text-align: center;
+    }
+   .sloy{
+      padding-top: 64.94px;
+      width: 316px;
+      height: 171px;
+      left: 29px;
+      top: 2937px;
+         background: url(sloy_n.png);
+
+   }
+    h2#portfolio_etext{
+      
+      text-align: center;
+      font-family: 'Gilroy-Medium';
+      font-size:18px;
+      line-height: 22px;
+      left: 13.07%;
+      right: 13.29%;
+      top: 70.82%;
+      bottom: 28.68%;
+      text-decoration-line: underline;
+      color: #070707;}   
+
+     .reebok{
+      padding-top: 77.97px;
+      width: 316px;
+      height: 176px;
+      left: 29px;
+      top: 3241px;
+      background: url(reebok_n.png);
+      
+     }
+      h2#reebok_text{
+         padding-top: 35px;
+         left: 22.93%;
+         right: 22.98%;
+         top: 77.84%;
+         bottom: 21.67%;
+      } 
+
+.braun{
+padding-top: 77.97px;
+width: 316px;
+height: 176px;
+left: 29px;
+top: 3552px;
+background: url(braun_n.png);
+     }
+h2#braun_text{
+left: 15.47%;
+right: 15.45%;
+top: 84.85%;
+bottom: 14.66%;
+padding-bottom: 20.97px;
+      }
+      #Contacts{
+         padding-top: 32.97px;
+         left: 30.67%;
+         right: 30.51%;
+         top: 89.02%;
+         bottom: 10.01%;
+         text-align: center;
+              }
+         
+}
+
