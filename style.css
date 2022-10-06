@@ -45,12 +45,13 @@ html{
    flex-wrap: nowrap;
    align-items: center;
    justify-content: space-around;
-   padding-top: 32.99px;
-   padding-left: 250.69px;
+   /* padding-top: 32.99px;
+   padding-left: 250.69px; */
 }
 .header__list{
    display: flex;
    flex-wrap: nowrap;
+padding: 0;
    padding-bottom: 32px;
 }
 ul{list-style: none;}
@@ -80,64 +81,60 @@ ul{list-style: none;}
 /*main*/
 .veronica {
    
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: self-end;
+   justify-content: space-between;
+   flex-direction: row;
 }
 
 
 .veronica__logo{
-padding-left: 140px;
-left: 26.37%;
-right: 74.08%;
-top: 128.13px;
-bottom: 94.82%;
-
-font-family: 'Gilroy-Bold';
-font-size:47.3392px;
-line-height: 59px;
-
-color: #070707;
+   /* padding-left: 140px; */
+   /* left: 26.37%; */
+   /* right: 74.08%; */
+   /* top: 128.13px; */
+   /* bottom: 94.82%; */
+   font-family: 'Gilroy-Bold';
+   font-size: 47.3392px;
+   line-height: 59px;
+   color: #070707;
 
 }
 .veronica__headline{
-
-left: 46.49%;
-right: 42.74%;
-top: 185px;
-margin-bottom: 49.67px;
-
-font-family: 'Gilroy-Medium';
-font-size: 18px;
-line-height: 22px;
-color: #070707;
+   /* left: 46.49%; */
+   /* right: 42.74%; */
+   /* top: 185px; */
+   /* margin-bottom: 49.67px; */
+   font-family: 'Gilroy-Medium';
+   font-size: 18px;
+   line-height: 22px;
+   color: #070707;
 }
 
 /*выбор языка*/
 .veronica__language{
-   left: 5.9%;
-
-top: 185px;
-font-family: 'Gilroy-Bold';
-font-size: 16px;
-line-height: 20px;
-color: #828282;
-transform: rotate(-90deg);
+       /* left: 5.9%; */
+      /* top: 185px; */
+      font-family: 'Gilroy-Bold';
+      font-size: 16px;
+      /* line-height: 20px; */
+      color: #828282;
+      transform: rotate(-90deg);
+      margin: 0 -25px 25px 0;
 }
 .wrapper__photo{
-   margin-left: 140px;
-   width: 943.61px;
-   height: 387px;
-   padding-left: 140px;
-   left: 250.69px;
-   top: 276.94px;
+   /* margin-left: 140px; */
+    /* width: 943.61px; */
+    height: 387px;
+    /* padding-left: 140px; */
+    /* left: 250.69px; */
+    /* top: 276.94px; */
    background: url(photo.png);
 }
 /*about-me*/
 .about-me{
-   padding-left: 140px;
+   /* padding-left: 140px; */
    display: flex;
    flex-wrap: nowrap;
    align-items: center;
@@ -145,7 +142,7 @@ transform: rotate(-90deg);
    flex-direction: column;
 }
 #Aboutme{
-   padding-left: 140px; 
+   /* padding-left: 140px; */ 
    left: 44.68%;
    right: 44.54%;
    top: 18.66%;
@@ -158,7 +155,7 @@ transform: rotate(-90deg);
 }
 .st{
    
-   padding-left: 140px;
+   /* padding-left: 140px; */
     width: 485.34px;
     height: 218px;
     left: 480.33px;
@@ -172,7 +169,7 @@ transform: rotate(-90deg);
 
  /* Skills */
  .skills{
-   padding-left: 140px;
+   /* padding-left: 140px; */
    display: flex;
    flex-wrap: nowrap;
    align-items: center;
@@ -181,7 +178,7 @@ transform: rotate(-90deg);
  }
 
  #Skills{
-   padding-left: 140px;
+   /* padding-left: 140px; */
    left: 45.8%;
    right: 45.59%;
    top: 1365px;
@@ -194,7 +191,7 @@ transform: rotate(-90deg);
  }
 
  .Skills_tit{
-   padding-left: 140px;
+   /* padding-left: 140px; */
    left: 42.18%;
    right: 42.04%;
     text-align: center;
@@ -204,7 +201,7 @@ transform: rotate(-90deg);
     top: 1460.14px;
  }
  .flex{
-   padding-left: 140px;
+   /* padding-left: 140px; */
    top:1566.65px;
     display: flex;
     justify-content: space-around;
@@ -274,7 +271,7 @@ transform: rotate(-90deg);
   /* Stars end*/
   /* Portfolio*/
   .portfolio_flex{
-   padding-left: 250px;
+   /* padding-left: 250px; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -313,7 +310,7 @@ transform: rotate(-90deg);
 
  .reebok_flex{
     top:2763px;
-    padding-left: 250px;
+    /* padding-left: 250px; */
     display: flex;
     align-items: center;
     flex-direction: column;  
@@ -337,7 +334,7 @@ transform: rotate(-90deg);
 
   .braun_flex{
     top:3451px;
-    padding-left: 250px;
+    /* padding-left: 250px; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -368,14 +365,14 @@ background: url(braun.png);
    /* Contacts*/
    .Contacts{
       top:4251.24px;
-      padding-left: 140px;
+      /* padding-left: 140px; */
       display: flex;
       align-items: center;
       flex-direction: column;    
    } 
   
 #Contacts{
-   padding-left: 140px;
+   /* padding-left: 140px; */
 left: 44.89%;
 right: 45.03%;
 top:4251.24px;
@@ -387,7 +384,7 @@ text-align: center;
 color: #070707;
   }
   .contacts_tit{
-padding-left: 140px;
+/* padding-left: 140px; */
 top:4314.34px;
 font-family: 'Gilroy-Medium';
 font-size: 18px;
@@ -398,11 +395,11 @@ color: #070707;
 .post{
    
    text-align: center;
-   padding-left: 140px;
+   /* padding-left: 140px; */
 	top:4401px;  
 }
   button [type="text"]{
-   padding-left: 140px;
+   /* padding-left: 140px; */
    align-items: center;
    padding: 3px 20.06px;
 	top:4401px;
@@ -443,7 +440,7 @@ color: #070707;
 /* Button */
 .icons{
    top:4531.99px;
-   padding-left: 250px;
+   /* padding-left: 250px; */
    display: block;
    
 }
@@ -482,7 +479,7 @@ color: #070707;
 .contacts_text{
    
    top:4601.76px;
-   padding-left: 250px;
+   /* padding-left: 250px; */
    
    font-family: 'Gilroy-Medium';
    font-size: 14px;
@@ -498,14 +495,6 @@ flex: 0 0 66.666667%;
 max-width: 66.666667%;
 order: 2;
 }
-}
-.veronica__headline{
-   padding-top: 15px;
-   display: block;
-   padding-left: 250px;
-}
-.veronica__language{
-   margin-left: 650px; 
 }
 @media (max-width: 1200px) {
 
@@ -625,17 +614,17 @@ padding-left: 29px;
 
 }
 
-.veronica__logo{
+/* .veronica__logo{
 left: 6.93%;
 right: 60%;
 top: 1.47%;
 bottom: 96.14%;
- }
+ } */
 
 .veronica__headline{
 display: flex;
 flex-direction: column;
-padding-left: 140px;
+/* padding-left: 140px; */
  padding-top: 23px;
  margin-bottom: 36.94px;  
  left: 7.47%;
