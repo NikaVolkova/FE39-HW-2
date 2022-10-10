@@ -1,0 +1,26 @@
+{
+  "name": "fe39-hw-2",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "description": "верстка макета portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikaVolkova/FE39-HW-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikaVolkova/FE39-HW-2/issues"
+  },
+  "homepage": "https://github.com/NikaVolkova/FE39-HW-2#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "sass": "^1.55.0"
+  }
+}

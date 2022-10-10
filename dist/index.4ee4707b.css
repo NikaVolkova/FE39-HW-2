@@ -1,0 +1,696 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("Gilroy-Bold.474a20d4.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("Gilroy-Medium.30fcfcd8.ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+.body {
+  max-width: 1445px;
+  height: 4759px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 140px;
+  font-family: Gilroy-Bold;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.wrapper {
+  max-width: 943.61px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.header__list {
+  flex-wrap: nowrap;
+  padding: 0 0 32px;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.header__item {
+  margin-right: 155.65px;
+  text-decoration: none;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  color: #828282;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.header__link::hover, .header__link::focus, .header__link::active {
+  opacity: .75;
+}
+
+.divid {
+  width: 940.6px;
+  padding-top: 5.87px;
+}
+
+.veronica {
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: self-end;
+  display: flex;
+}
+
+.veronica__logo {
+  color: #070707;
+  font-family: Gilroy-Bold;
+  font-size: 47.3392px;
+  line-height: 59px;
+}
+
+.veronica__headline {
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.veronica__language {
+  color: #828282;
+  margin: 0 -25px 25px 0;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  transform: rotate(-90deg);
+}
+
+.wrapper__photo {
+  height: 387px;
+  background: url("photo.31326e4d.png");
+}
+
+.about-me {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#Aboutme {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  inset: 18.66% 44.54% 80.43% 44.68%;
+}
+
+.st {
+  width: 485.34px;
+  height: 218px;
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  top: 949px;
+  left: 480.33px;
+}
+
+.skills {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#Skills {
+  text-align: center;
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  inset: 1365px 45.59% 70.77% 45.8%;
+}
+
+.Skills_tit {
+  text-align: center;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  top: 1460.14px;
+  left: 42.18%;
+  right: 42.04%;
+}
+
+.flex {
+  width: 880px;
+  height: 450px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  top: 1566.65px;
+}
+
+.flex-box {
+  width: 89.21px;
+  height: 110px;
+}
+
+.flex-box:nth-child(1), .flex-box:nth-child(2), .flex-box:nth-child(3), .flex-box:nth-child(4) {
+  text-align: center;
+  font-family: Gilroy-Bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.rtext {
+  text-align: center;
+  color: #828282;
+  font-family: Gilroy-Bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.rating > span {
+  width: 1.1em;
+  display: inline-block;
+  position: relative;
+}
+
+.rating > span:hover:before, .rating > span:hover ~ span:before {
+  content: "★";
+  position: absolute;
+}
+
+.portfolio_flex {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+#Portfolio {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  inset: 41.96% 45.21% 57.13% 45.62%;
+}
+
+.sloy {
+  height: 510px;
+  width: 937px;
+  background: url("sloy.20b5b68e.png");
+}
+
+h2#portfolio_etext {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  inset: 55.51% 40.1% 44.02% 40.79%;
+}
+
+.reebok_flex {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  top: 2763px;
+}
+
+.reebok {
+  height: 522px;
+  width: 938px;
+  background: url("reebok.389f80b4.png");
+}
+
+h2#reebok_text {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  top: 3329.89px;
+  left: 43.36%;
+  right: 42.6%;
+}
+
+.braun_flex {
+  height: 686px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  top: 3451px;
+}
+
+.braun {
+  width: 936.24px;
+  height: 522px;
+  background: url("braun.8e70021f.png");
+  top: 3451px;
+  left: 252.7px;
+}
+
+h2#braun_text {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  top: 4018.9px;
+  left: 41.42%;
+  right: 40.65%;
+}
+
+.Contacts {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  top: 4251.24px;
+}
+
+#Contacts {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  inset: 4251.24px 45.03% 9.76% 44.89%;
+}
+
+.contacts_tit {
+  text-align: center;
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  top: 4314.34px;
+}
+
+.post {
+  text-align: center;
+  top: 4401px;
+}
+
+button [type="text"] {
+  text-transform: uppercase;
+  height: 38px;
+  width: 166.46px;
+  background-color: #000;
+  border: 0;
+  border-radius: 50px;
+  align-items: center;
+  padding: 3px 20.06px;
+  top: 4401px;
+}
+
+.st_submit {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #f1efef;
+  font-family: Gilroy-Bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.st_submit::hover, .st_submit::focus, .st_submit::active {
+  background: #7b519d;
+}
+
+.icon.major {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  box-shadow: 0 0 0 7px #fff, 0 0 0 8px #e0e0e0;
+}
+
+.icon.major:before {
+  font-size: 24px;
+}
+
+.icons {
+  display: block;
+  top: 4531.99px;
+}
+
+.social__block {
+  width: max-content;
+  margin: 15px auto;
+  display: block;
+}
+
+.social {
+  display: inline-block;
+}
+
+.social a {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  margin: 0 10px 10px 0;
+  display: block;
+  box-shadow: 0 2px 4px #00000026, inset 0 0 50px #0000001a;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+.social svg {
+  width: 32px;
+  height: 32px;
+  margin-top: 7px;
+}
+
+.facebook a:hover {
+  background: #3b5998;
+}
+
+.instagram a:hover {
+  background: #3f729b;
+}
+
+.telegram a:hover {
+  background: #249bd7;
+}
+
+.viber a:hover {
+  background: #7b519d;
+}
+
+.contacts_text {
+  text-align: center;
+  color: #828282;
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  line-height: 17px;
+  top: 4601.76px;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .main {
+    max-width: 66.6667%;
+    flex: 0 0 66.6667%;
+    order: 2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    max-width: 75%;
+    flex: 0 0 75%;
+  }
+
+  .header__nav {
+    padding-right: 140px;
+  }
+
+  .sloy {
+    width: 937px;
+    height: 510px;
+    background: url("sloy.20b5b68e.png") no-repeat;
+    padding-top: 64.94px;
+    top: 2937px;
+    left: 29px;
+  }
+
+  h2#portfolio_etext {
+    padding-top: 77.97px;
+  }
+
+  .reebok {
+    width: 937px;
+    height: 510px;
+    background: url("reebok.389f80b4.png") no-repeat;
+    padding-top: 77.97px;
+    top: 3241px;
+    left: 29px;
+  }
+
+  h2#reebok_text {
+    padding-top: 77 / 97px;
+    inset: 77.84% 22.98% 21.67% 22.93%;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  header {
+    padding: 26px 0;
+  }
+
+  .body {
+    max-width: 767px;
+    height: 4435px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 29px;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #ffefba;
+    padding: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+  }
+
+  .header__item {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .header__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header__link {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    z-index: 11;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header__nav-close-line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .header__nav-close-line:first-child {
+    transform: translateY(-50%)rotate(45deg);
+  }
+
+  .header__nav-close-line:last-child {
+    transform: translateY(-50%)rotate(-45deg);
+  }
+
+  .veronica {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .veronica__headline {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 36.94px;
+    padding-top: 23px;
+    display: flex;
+    top: 4.37%;
+    bottom: 94.63%;
+  }
+
+  .veronica__language {
+    color: #828282;
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    line-height: 20px;
+    position: fixed;
+    top: 185px;
+    left: 95.9%;
+    transform: rotate(-90deg);
+  }
+
+  .wrapper__photo {
+    text-align: center;
+    height: 478px;
+    background: url("photo_n.fc70b8b3.webp") no-repeat;
+    padding-top: 36.94px;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  #Skills {
+    color: #000;
+    padding-top: 59px;
+    top: 31.79%;
+    bottom: 67.62%;
+  }
+
+  .Skills_tit {
+    color: #000;
+    inset: 33.51% 19.48% 65.95% 19.73%;
+  }
+
+  .flex {
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 35.65%;
+    bottom: 62.36%;
+  }
+
+  .flex-box:nth-child(1) {
+    padding-top: 70.96px;
+    left: 38%;
+    right: 38.24%;
+  }
+
+  .flex-box:nth-child(2) {
+    padding-top: 199.59px;
+    left: 38%;
+    right: 38.24%;
+  }
+
+  .flex-box:nth-child(3) {
+    padding-top: 202.21px;
+    left: 38%;
+    right: 38.24%;
+  }
+
+  .flex-box:nth-child(4) {
+    padding-top: 199.43px;
+    left: 38%;
+    right: 38.24%;
+  }
+
+  #Portfolio {
+    text-align: center;
+    padding-top: 179.73px;
+    inset: 63.79% 32.39% 35.24% 32.27%;
+  }
+
+  .sloy {
+    width: 316px;
+    height: 171px;
+    background: url("sloy_n.fff0e7be.png") no-repeat;
+    padding-top: 64.94px;
+    top: 2937px;
+    left: 29px;
+  }
+
+  h2#portfolio_etext {
+    text-align: center;
+    color: #070707;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    inset: 70.82% 13.29% 28.68% 13.07%;
+  }
+
+  .reebok {
+    width: 316px;
+    height: 176px;
+    background: url("reebok_n.3e43c916.png") no-repeat;
+    padding-top: 77.97px;
+    top: 3241px;
+    left: 29px;
+  }
+
+  h2#reebok_text {
+    padding-top: 35px;
+    inset: 77.84% 22.98% 21.67% 22.93%;
+  }
+
+  .braun {
+    width: 316px;
+    height: 176px;
+    background: url("braun_n.7652c85c.png") no-repeat;
+    padding-top: 77.97px;
+    top: 3552px;
+    left: 29px;
+  }
+
+  h2#braun_text {
+    padding-bottom: 20.97px;
+    inset: 84.85% 15.45% 14.66% 15.47%;
+  }
+
+  #Contacts {
+    text-align: center;
+    padding-top: 32.97px;
+    inset: 89.02% 30.51% 10.01% 30.67%;
+  }
+}
+
+/*# sourceMappingURL=index.4ee4707b.css.map */
