@@ -28,6 +28,7 @@
    line-height: 17px;
    text-align: center;
 }
+
 html{
    box-sizing: border-box;
 }
@@ -56,7 +57,6 @@ html{
          align-items: center;
          justify-content: space-between;
          flex-wrap: nowrap;
-         padding-bottom: 32px;
          .header__item{
             display: flex;
             align-items: center;
@@ -78,7 +78,7 @@ html{
             }
          }
       }
-      ul{list-style: none;}
+      ul{list-style: none; padding-left: 0;}
       .divid{
          width: 940.6px;
         padding-top: 5.87px;  
@@ -92,7 +92,7 @@ html{
 .veronica {  
    display: flex;
    flex-wrap: nowrap;
-   align-items: self-end;
+   align-items: center;
    justify-content: space-between;
    flex-direction: row;
    .veronica__logo{
@@ -108,29 +108,45 @@ html{
       color: #070707;
    }
    /*выбор языка*/
-.veronica__language{
-   font-family: 'Gilroy-Bold';
-   font-size: 16px;
-   color: #828282;
-   transform: rotate(-90deg);
-   margin: 0 -25px 25px 0;
+   .veronica__language{
+      display: flex;
+      transform: rotate(-90deg);
+      padding-top: 79px;
+      
+       li{list-style-type: none;
+         color: #828282;
+      }
+      .RU, .ENG, .Symbol {
+         font-family: 'Gilroy';
+         color: #828282;
+      }
+      .RU:hover {
+         color: #000;
+         transition: all 0.5s;
+      }
+      .ENG:hover {
+         color: #000;
+         transition: all 0.5s;
+      }
+   }
 }
-}
+
+
 
 .wrapper__photo{
     height: 387px;
+    max-width: 100%;
    background: url(./photo.png);
 }
 /*about-me*/
 .about-me{
-   /* padding-left: 140px; */
    display: flex;
    flex-wrap: nowrap;
    align-items: center;
    justify-content:center;
    flex-direction: column;
-   #Aboutme{
-      /* padding-left: 140px; */ 
+   #Aboutme{ 
+      padding-top: 30px;
       left: 44.68%;
       right: 44.54%;
       top: 18.66%;
@@ -139,30 +155,29 @@ html{
        text-align: center;
          
    }
-   .st{
-   
-      /* padding-left: 140px; */
+   .st{display:flex;
+      flex-wrap: wrap;
        width: 485.34px;
        height: 218px;
        left: 480.33px;
        top: 949px;
        @include h;
        text-align: center;
-     
+     p{padding-bottom: 7px;}
    }
 
 }
 
  /* Skills */
  .skills{
-   /* padding-left: 140px; */
+  padding-top: 100px;
    display: flex;
    flex-wrap: nowrap;
    align-items: center;
    justify-content:center;
    flex-direction: column;
    #Skills{
-      /* padding-left: 140px; */
+
       left: 45.8%;
       right: 45.59%;
       top: 1365px;
@@ -171,7 +186,6 @@ html{
       @include title;  
     }
     .Skills_tit{
-      /* padding-left: 140px; */
       left: 42.18%;
       right: 42.04%;
        text-align: center;
@@ -179,19 +193,19 @@ html{
        top: 1460.14px;
     }
     .flex{
-      /* padding-left: 140px; */
-      top:1566.65px;
+      
        display: flex;
-       justify-content: space-around;
+       justify-content: space-between;
        align-items: center;
        flex-wrap: nowrap;
        width: 880px;
-       height: 450px;
+       height: 350px;
        .flex-box{
          width: 89.21px;
          height: 110px;
+      
          .flex-box:nth-child(1){
-    @include box;
+            @include box;
          }
          .flex-box:nth-child(2){
             @include box;
@@ -245,12 +259,13 @@ html{
        @include title;  
     }
    .sloy{
+      
       height: 510px;
       width: 937px;
-      background: url(./sloy.png);
+      background: url(./sloy.png) no-repeat;
    }
-    h2#portfolio_etext{
-      
+    a#portfolio_etext{
+      padding-bottom: 50px;
       text-align: center;
       @include h;
       left: 40.79%;
@@ -259,7 +274,9 @@ html{
       bottom: 44.02%;
       text-decoration-line: underline;
       }
-
+      a#portfolio_etext::hover,a#portfolio_etext::focus,a#portfolio_etext::active{
+         opacity: 0.75;
+      }
  }
 
 /* Portfolio end*/
@@ -271,18 +288,21 @@ html{
     align-items: center;
     flex-direction: column;  
     .reebok{
-      height: 522px;
-      width: 938px;
-      background: url(./reebok.png);
+     height: 522px;
+     width: 937px;
+      background: url(./reebok.png) no-repeat;
    }
-    h2#reebok_text{
+    a#reebok_text{
+      padding-bottom: 50px;
       left: 43.36%;
       right: 42.6%;
        text-align: center;
        @include h;
        top:3329.89px;
        text-decoration-line: underline;
-      
+       a#reebok_text::hover,a#reebok_text::focus,a#reebok_text::active{
+         opacity: 0.75;
+      }
     }
  }
 
@@ -291,32 +311,34 @@ html{
 
   .braun_flex{
     top:3451px;
-    /* padding-left: 250px; */
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;  
     height: 686px;
     .braun{
-      width: 936.24px;
       height: 522px;
-      left: 252.7px;
-      top: 3451px;
-      background: url(./braun.png);
+      width: 937px;
+      background: url(./braun.png)no-repeat;
       }
-       h2#braun_text{
+       a#braun_text{
+         padding-bottom: 50px;
          left: 41.42%;
          right: 40.65%;
          text-align: center;
          @include h;
           top:4018.9px;
           text-decoration-line: underline;
+          a#braun_text::hover,a#braun_text::focus,a#braun_text::active{
+            opacity: 0.75;
+         }
        }
  }
   /* Braun end*/
    /* Contacts*/
    .Contacts{
-      top:4251.24px;
-      /* padding-left: 140px; */
+      
+      top: 89.33%;
+
       display: flex;
       align-items: center;
       flex-direction: column; 
@@ -335,13 +357,13 @@ html{
       text-align: center;
         }
         .post{
-   
+         padding-bottom: 103.08px;
          text-align: center;
          top:4401px;  
       }
         button [type="text"]{
          align-items: center;
-         padding: 3px 20.06px;
+         padding: 3px 20px;
          top:4401px;
          border:0;
          text-transform: uppercase;	
@@ -349,10 +371,14 @@ html{
          width: 166.46px;	
         background-color:black;
         border-radius: 50px;
+        button.st_submit::hover,button.st_submit::focus,button.st_submit::active{
+         background: #7b519d;
+      } 
       }
       
       .st_submit{
-         
+         padding: 3px 20px;
+         border-radius: 50px;
          border:1px solid #f1efef;
          font-family: 'Gilroy-Bold';
          font-size: 18px;
@@ -360,9 +386,7 @@ html{
          text-align: center; 
          color: #FFFFFF;
          background-color:black;}
-         .st_submit::hover,.st_submit::focus,.st_submit::active{
-            background: #7b519d;
-         }  
+          
    } 
 
 
@@ -430,7 +454,11 @@ html{
 }
 
 @media (max-width: 1200px) {
-
+   .wrapper__photo{
+      width: 937px;
+      height: 387px;
+     background: url(./photo.png);
+  }
 .sloy{
    padding-top: 64.94px;
    width: 937px;
@@ -439,7 +467,7 @@ html{
    top: 2937px;
    background: url(./sloy.png) no-repeat;
 }
-h2#portfolio_etext{
+a#portfolio_etext{
    padding-top: 77.97px;
 }
      .reebok{
@@ -450,17 +478,37 @@ h2#portfolio_etext{
       top: 3241px;
       background: url(./reebok.png) no-repeat;    
      }
-     h2#reebok_text{
-      padding-top: 77/97px;
+     a#reebok_text{
+      padding-top: 77.97px;
       left: 22.93%;
       right: 22.98%;
       top: 77.84%;
       bottom: 21.67%;
    } 
+   .braun_flex{
+  
+      left: 29px;
+      top: 3451px;
+          
+     }
+     a#braun_text{
+      padding-top: 77.97px;
+      left: 22.93%;
+      right: 22.98%;
+      top: 77.84%;
+      bottom: 21.67%;
+     
+   } 
+   #Contacts{
+   
+      left: 30.67%;
+      right: 30.51%;
+      top: 89.02%;
+      bottom: 10.01%;
+      text-align: center;
+           } 
 }
-@media (min-width: 968px) and (max-width:1199px) {
 
-   }
    @media (min-width: 768px) and (max-width:987px) {
       .body {
          max-width: 987px;   
@@ -484,20 +532,39 @@ h2#portfolio_etext{
          padding: 75px;
          transform: translateX(100%);
       }
+      .flex{
+         padding-left: 10;
+         padding-right: 25px;
+         max-width: 700px;
+         height: 350px;}
+
       .portfolio_flex{
+         padding-left: 5px;
          .sloy{
-         width: 80%;
+         width: 100%;
       }
    }
    .reebok_flex{
+      padding-left: 5px;
       .reebok{
-         width: 80%;
+         width: 100%;
         }
       }
         .braun_flex{
+         padding-left: 5px;
          .braun{
-      width: 80%;
-}}
+            width: 100%;    
+}
+
+}
+#Contacts{
+   padding-top: 44.88px; 
+   left: 30.67%;
+   right: 30.51%;
+   top: 89.33%;
+   bottom: 10.01%;
+   text-align: center;
+        }        
    }
 @media (max-width: 767px){
 
@@ -647,7 +714,7 @@ padding-top: 199.43px;
 left: 38%;
 right: 38.24%;
    }
-   .portfolio_flex{
+   .portfolio_flex{padding-top: 350px;
    #Portfolio{
       padding-top: 350px;
       left: 32.27%;
@@ -664,7 +731,8 @@ right: 38.24%;
       top: 2937px;
       background: url(sloy_n.png) no-repeat;
    }
-    h2#portfolio_etext{      
+    a#portfolio_etext{  
+      padding-top: 44.88px;   
       text-align: center;
       @include h;
       left: 13.07%;
@@ -676,16 +744,15 @@ right: 38.24%;
    } 
       .reebok_flex{
      .reebok{
-      padding-top: 77.97px;
+      padding-top: 99.09px;
       width: 316px;
       height: 176px;
       left: 29px;
       top: 3241px;
-      background: url(reebok_n.png) no-repeat;
-      
+      background: url(reebok_n.png) no-repeat; 
      }
-      h2#reebok_text{
-         padding-top: 35px;
+      a#reebok_text{
+         padding-top: 44.88px; 
          left: 22.93%;
          right: 22.98%;
          top: 77.84%;
@@ -694,13 +761,14 @@ right: 38.24%;
    }
 .braun_flex{
    .braun{
-padding-top: 77.97px;
+padding-top: 99.09px;
 width: 316px;
 height: 176px;
 left: 29px;
 top: 3552px;
 background: url(braun_n.png) no-repeat;}
-h2#braun_text{
+a#braun_text{
+   padding-top: 44.88px; 
    left: 15.47%;
    right: 15.45%;
    top: 84.85%;
@@ -709,7 +777,7 @@ h2#braun_text{
      }
 
       #Contacts{
-         padding-top: 32.97px;
+
          left: 30.67%;
          right: 30.51%;
          top: 89.02%;
